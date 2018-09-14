@@ -16,3 +16,11 @@ button {
 button:disabled {
   cursor: default;
 }
+
+header {
+  color: teal;
+}
+.is-active {
+  font-weight: bold;
+  color: olive;
+}
