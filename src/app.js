@@ -18,26 +18,26 @@ store.subscribe(()=> {
   console.log(visibleExpenses);
 });
 
-// //  addExpense Water bill
-// store.dispatch(addExpense({
-//   description: 'Water bill',
-//   amount: 25000,
-//   note: 'Lots of dishes done'
-// }));
+//  addExpense Water bill
+store.dispatch(addExpense({
+  description: 'Water bill',
+  amount: 25000,
+  note: 'Lots of dishes done'
+}));
 
-// //  addExpense Rent
-// const rent = store.dispatch(addExpense({
-//   description: 'Rent',
-//   amount: 950000,
-//   note: 'Keep the roof overhead'
-// }));
+//  addExpense Rent
+const rent = store.dispatch(addExpense({
+  description: 'Rent',
+  amount: 950000,
+  note: 'Keep the roof overhead'
+}));
 
-// //  addExpense Gas bill
-// store.dispatch(addExpense({
-//   description: 'Gas bill',
-//   amount: 2300,
-//   note: 'Had to heat the water for dishes to get done'
-// }));
+//  addExpense Gas bill
+store.dispatch(addExpense({
+  description: 'Gas bill',
+  amount: 2300,
+  note: 'Had to heat the water for dishes to get done'
+}));
 
 // const state = store.getState();
 // const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
