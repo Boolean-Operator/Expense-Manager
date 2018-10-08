@@ -7,6 +7,6 @@ const Header = () => (
     <h1>Expensify Header</h1>
     <NavLink to="/" activeClassName="is-active" exact={true}>Dashboard-*-</NavLink>
     <NavLink to="/create" activeClassName="is-active">Add Expense-*-</NavLink>
-u  </header>
+  </header>
 )
 export default Header;
