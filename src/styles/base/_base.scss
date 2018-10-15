@@ -3,8 +3,6 @@ html {
 }
 
 body {
-  background: $page;
-  color: $text;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $md-size;
 }
@@ -15,12 +13,4 @@ button {
 
 button:disabled {
   cursor: default;
-}
-
-header {
-  color: teal;
-}
-.is-active {
-  font-weight: bold;
-  color: olive;
 }
