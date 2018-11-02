@@ -18,7 +18,7 @@ exports[`should render Header correctly 1`] = `
     ariaCurrent="true"
     to="/create"
   >
-    Add Expense-*-
+    Create Expense-*-
   </NavLink>
 </header>
 `;
