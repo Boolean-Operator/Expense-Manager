@@ -23,7 +23,7 @@
     "css-loader": "^0.28.11",
     "express": "^4.16.0",
     "extract-text-webpack-plugin": "^3.0.0",
-    "firebase": "^4.13.1",
+    "firebase": "^5.5.9",
     "merge": "^1.2.1",
     "moment": "^2.22.2",
     "node-sass": "^4.9.3",
