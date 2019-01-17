@@ -1,5 +1,6 @@
 #Expensify Applicaion
 - An expense tracking and presentation application
+- This version is being refactored to a working Redux with Firebase application
 
 ## Overview
 - Node, Bable, Webpack and React
@@ -8,6 +9,9 @@
 - Link: [Expense Management Applicaion](https://ancient-sands-69643.herokuapp.com/)
 
 ## Future Versions and Updates
+- Add Styling with CSS 
+- Include Auth
+
 
 ## Notes 
 - Reducers
