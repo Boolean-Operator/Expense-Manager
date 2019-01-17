@@ -2,7 +2,7 @@ import * as firebase from 'firebase';
 
 // Set auth and apiKey for firebase project
 const config = {
-  apiKey: "AIzaSyBa6A0V2TAX4b_4QQZUIhLEbrINKxHFnM4",
+  apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
   authDomain: "expensify-f64e2.firebaseapp.com",
   databaseURL: "https://expensify-f64e2.firebaseio.com",
   projectId: "expensify-f64e2",
