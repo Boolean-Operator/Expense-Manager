@@ -34,9 +34,7 @@ const startAddExpense = (expenseData = {}) => {
 };
 
 //  REMOVE_EXPENSE
-const removeExpense = ({
-  id
-} = {}) => ({
+const removeExpense = ({ id } = {}) => ({
   type: 'REMOVE_EXPENSE',
   id: id
 });
@@ -48,5 +46,48 @@ const editExpense = (id, updates) => ({
   updates: updates
 });
 
+//  SET_EXPENSES
+const setExpenses = (expenses) => ({
+  type: 'SET_EXPENSES',
+  expenses
+});
 
-export { addExpense, removeExpense, editExpense, startAddExpense } 
+
+// fetch all expense data once
+// Parse that data to array
+// dispatch expenses, instead of c.log
+
+const startSetExpenses = () => {
+  // return (dispatch) => {
+
+    return database.ref('expenses')
+      .once('value')
+      .then((snapshot) => {
+        const expenses = [];
+    
+        snapshot.forEach((childSnapshot) => {
+          expenses.push({
+            id: childSnapshot.key,
+            ...childSnapshot.val()
+          });
+        });
+        // dispatch(setExpenses({expenses}));
+        console.log(expenses);
+    
+      }).catch((error) => {
+        console.log('Dave, I afraid something has gone terribly wrong. ', error);
+      });
+  // }
+};
+
+
+
+
+export {
+  addExpense,
+  startAddExpense,
+  removeExpense,
+  editExpense,
+  setExpenses,
+  startSetExpenses
+}

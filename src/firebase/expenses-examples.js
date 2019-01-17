@@ -32,7 +32,7 @@ database.ref('expenses')
     console.log('Dave, I afraid something has gone terribly wrong. ', error);
   });
   
-// EVENT LISTENER - SUBCRIPTION - ANY CHANGES
+// EVENT LISTENER - SUBCRIPTION - ANY CHANGES - ".on('value', (snapshot) = >{})"
 database.ref('expenses')
   .on('value', (snapshot) => {
     const expenses = [];
