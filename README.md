@@ -21,3 +21,6 @@
 
 - Action Generators
   - Are functions that return action objects
+
+  - remote title update
+  
