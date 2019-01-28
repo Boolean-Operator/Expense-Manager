@@ -59,22 +59,23 @@ const editExpense = (id, updates) => ({
   updates: updates
 });
 
+const startEditExpense = (id, updates) => {
+  return (dispatch) => {
+    return database.ref(`expenses/${id}`).update(updates).then(() => {
+      dispatch(editExpense(id, updates));
+    });
+  };
+};
+
 //  SET_EXPENSES
 const setExpenses = (expenses) => ({
   type: 'SET_EXPENSES',
   expenses
 });
 
-// fetch all expense data once
-// Parse that data to array
-// dispatch expenses, instead of c.log
-
 const startSetExpenses = () => {
   return (dispatch) => {
 
-  // Fetch all expense data once
-  // Parse data into array
-  // Dispatch SET_EXPENSES
     return database.ref('expenses')
       .once('value')
       .then((snapshot) => {
@@ -103,6 +104,7 @@ export {
   removeExpense,
   startRemoveExpense,
   editExpense,
+  startEditExpense,
   setExpenses,
   startSetExpenses
 }

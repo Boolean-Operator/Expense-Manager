@@ -1,26 +1,22 @@
 #Expensify Applicaion
-- An expense tracking and presentation application
-- This version is being refactored to a working Redux with Firebase application
-- There is no CSS, yet.
+- An expense management and presentation application
+- This application is a working React/Redux application with data persistance on firebase.
 
 ## Overview
-- Node, Bable, Webpack and React
+- Node, Bable, Webpack and React with Redux
 - Firebase database
 - Hosted on Heroku free tier so spin up may take a few second longer.
 - Link: [Expense Management Applicaion](https://ancient-sands-69643.herokuapp.com/)
 
-## Future Versions and Updates
-- Add Authentication
-- Add Styling with CSS 
+## Features to Added
+- Firebase Authentication
+- Styling 
 
 
-## Notes / reminders
+## Notes / Reminders
 - Reducers
   - Are pure functions
   - Never change state or action
 
 - Action Generators
   - Are functions that return action objects
-
-  - remote title update
-  
