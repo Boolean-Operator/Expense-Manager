@@ -20,7 +20,7 @@ const jsx = (
 );
 
 
-ReactDOM.render(<h2>Loading...</h2>, document.getElementById('app'));
+ReactDOM.render(<h2>Loading data ...</h2>, document.getElementById('app'));
 store.dispatch(startSetExpenses()).then(() => {
   ReactDOM.render(jsx, document.getElementById('app'))
 });

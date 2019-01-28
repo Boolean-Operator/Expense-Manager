@@ -58,8 +58,11 @@ const setExpenses = (expenses) => ({
 // dispatch expenses, instead of c.log
 
 const startSetExpenses = () => {
-  // return (dispatch) => {
+  return (dispatch) => {
 
+  // Fetch all expense data once
+  // Parse data into array
+  // Dispatch SET_EXPENSES
     return database.ref('expenses')
       .once('value')
       .then((snapshot) => {
@@ -71,13 +74,12 @@ const startSetExpenses = () => {
             ...childSnapshot.val()
           });
         });
-        // dispatch(setExpenses({expenses}));
-        console.log(expenses);
+        dispatch(setExpenses(expenses));
     
       }).catch((error) => {
         console.log('Dave, I afraid something has gone terribly wrong. ', error);
       });
-  // }
+  }
 };
 
 
