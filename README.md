@@ -9,8 +9,10 @@
 - Link: [Expense Management Applicaion](https://ancient-sands-69643.herokuapp.com/)
 
 ## Features to Added
-- Firebase Authentication
-- Styling 
+- Add Github login
+- Confirmation modal for removing an expense
+- Show number of hidden expenses in dashboard summary page
+- Add this to porfolio page
 
 
 ## Notes / Reminders
